@@ -315,7 +315,7 @@ html {
 
 /* --------------------------- BODY --------------------------- */
 body {
-  font-family: "Spline Sans", sans-serif;
+  font-family: "Urbanist", sans-serif;
   font-weight: 300;
   min-width: 320px;
 }
@@ -335,7 +335,7 @@ header {
 header span {
   font-size: 1.6rem;
   font-weight: 300;
-  color: #1d295f;
+  color: #290102;
 }
 
 /* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
@@ -368,13 +368,13 @@ header span {
   display: none;
 }
 #primaryNav ul li a {
-  color: #1d295f;
+  color: #290102;
   display: block;
   padding: 0.75rem 10px;
   text-decoration: none;
 }
 #primaryNav ul li.active a {
-  background-color: #7c1d47;
+  background-color: #a7292f;
   color: white;
   font-weight: 500;
 }
@@ -385,6 +385,40 @@ header span {
 
 #primaryNav ul.open {
   display: block;
+}
+
+/* --------------------------- MAIN --------------------------- */
+main h1 {
+  padding: 1rem 10px 0.5rem 10px;
+  font-size: 1.5rem;
+  color: #a7292f;
+  font-weight: 300;
+}
+main p {
+  padding: 0.5rem 10px;
+  color: #333;
+  line-height: 150%;
+}
+main h2 {
+  color: #290102;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1rem 0;
+  padding: 0 8px;
+}
+
+.column {
+  padding: 0 8px;
+  margin: 8px 0;
+}
+
+main img {
+  width: 100%;
+  height: auto;
 }
 
 .small-1 {
@@ -435,22 +469,25 @@ header span {
   flex-basis: 100%;
 }
 
-/* --------------------------- MAIN --------------------------- */
-main h1 {
-  padding: 1rem 10px 0.5rem 10px;
-  font-size: 1.5rem;
-  color: #7c1d47;
-  font-weight: 300;
+.round, .fill, .shadow {
+  padding: 0 8px;
 }
-main p {
-  padding: 0.5rem 10px;
-  color: #333;
-  line-height: 150%;
+
+.round {
+  border-radius: 9px;
+}
+
+.fill {
+  background-color: #eee;
+}
+
+.shadow {
+  box-shadow: 0 0 10px #eee;
 }
 
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {
-  background-color: #1d295f;
+  background-color: #290102;
 }
 
 footer {
@@ -484,7 +521,7 @@ footer a {
     padding: 0.4rem 1rem;
   }
   #primaryNav ul a:hover, #primaryNav ul.open a:hover {
-    text-decoration: underline 4px #3990c3;
+    text-decoration: underline 4px #a7292f;
   }
   .medium-1 {
     flex-basis: 8.3333333333%;

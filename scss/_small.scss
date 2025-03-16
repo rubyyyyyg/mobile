@@ -73,7 +73,7 @@ header {
         text-decoration: none;
     }
     li.active a {
-        background-color: $secondaryColor;
+        background-color: $accentColor;
         color: white;
         font-weight: $normalWeight;
     }
@@ -88,10 +88,7 @@ header {
 }
 
 
-@for $i from 1 through 12 {
-    $w: calc($i /12) *100%;
-    .small-#{$i} {flex-basis: $w;}
-}
+
 
 
 
@@ -102,7 +99,7 @@ main {
     h1 {
         padding: 1rem $gutter.5rem $gutter;
         font-size: 1.5rem;
-        color: $secondaryColor;
+        color: $accentColor;
         font-weight: $lightWeight
     }
     p {
@@ -110,9 +107,41 @@ main {
         color: #333;
         line-height: $leading;
     }
+    h2 {
+        color: $primaryColor;
+    }
 }// end main
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1rem 0;
+    padding: 0 8px;
+    //border: green solid 1px;
+}
+.column {
+    //border: pink dashed 1px;
+    padding: 0 8px;
+    margin: 8px 0;
+}
 
+main img {
+    width: 100%;
+    height: auto;
+}
+//create for loop
+@for $i from 1 through 12 {
+    $w: calc($i /12) *100%;
+    .small-#{$i} {flex-basis: $w;}
+}
+
+.round, .fill, .shadow {
+    padding: 0 8px;
+}
+.round{border-radius: 9px;}
+.fill{background-color: #eee;}
+.shadow{box-shadow: 0 0 10px #eee;}
 
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {
